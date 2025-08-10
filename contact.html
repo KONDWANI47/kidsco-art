@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kidsco Academy - Contact</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <div class="nav-wrapper">
+      <a href="index.html" class="logo"><i data-lucide="graduation-cap" class="logo-icon"></i></a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="registration.html" class="nav-link">Registration</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="programs.html" class="nav-link">Programs</a>
+        <a href="admissions.html" class="nav-link">Admissions</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="flex-right">
+        <a href="admin.html" class="nav-link">Admin</a>
+        <button id="mobileMenuBtn" class="mobile-menu-btn"><i data-lucide="menu"></i></button>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a class="mobile-nav-link" href="index.html">Home</a>
+  <a class="mobile-nav-link" href="registration.html">Registration</a>
+  <a class="mobile-nav-link" href="about.html">About</a>
+  <a class="mobile-nav-link" href="programs.html">Programs</a>
+  <a class="mobile-nav-link" href="admissions.html">Admissions</a>
+  <a class="mobile-nav-link" href="contact.html">Contact</a>
+</div>
+
+<main class="contact" style="padding-top:120px;">
+  <div class="container">
+    <h1 class="section-title">Contact Us</h1>
+    <div class="contact-content">
+      <div class="contact-form-wrapper">
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label class="form-label" for="name">Full Name</label>
+            <input class="form-input" id="name" name="name" required/>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input" type="email" id="email" name="email" required/>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="phone">Phone</label>
+            <input class="form-input" type="tel" id="phone" name="phone"/>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="interest">I'm interested in</label>
+            <select id="interest" name="interest" class="form-select">
+              <option>Kindergarten</option>
+              <option>Primary (Std. 1–4)</option>
+              <option>Admissions</option>
+              <option>Transportation</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea id="message" name="message" rows="4" class="form-textarea" required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <div class="info-card">
+          <h3 class="info-title">School Office</h3>
+          <div class="info-items">
+            <div class="info-item"><i data-lucide="phone" class="info-icon"></i><span>+1 (000) 000-0000</span></div>
+            <div class="info-item"><i data-lucide="mail" class="info-icon"></i><span>info@kidsco.example</span></div>
+            <div class="info-item"><i data-lucide="map-pin" class="info-icon"></i><span>123 Learning Lane, Education City</span></div>
+          </div>
+        </div>
+        <div class="info-card">
+          <h3 class="info-title">Office Hours</h3>
+          <div class="hours-list">
+            <div class="hour-item"><span>Mon - Fri</span><span>8:00 AM - 4:00 PM</span></div>
+            <div class="hour-item"><span>Saturday</span><span>9:00 AM - 12:00 PM</span></div>
+            <div class="hour-item"><span>Sunday</span><span>Closed</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer"><div class="container"><div class="footer-bottom"><p>&copy; 2025 Kidsco Academy.</p></div></div></footer>
+<script src="script.js"></script>
+</body>
+</html>

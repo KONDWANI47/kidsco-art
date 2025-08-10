@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kidsco Academy - Programs & Extras</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <div class="nav-wrapper">
+      <a href="index.html" class="logo"><i data-lucide="graduation-cap" class="logo-icon"></i></a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="registration.html" class="nav-link">Registration</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="programs.html" class="nav-link">Programs</a>
+        <a href="admissions.html" class="nav-link">Admissions</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="flex-right">
+        <a href="admin.html" class="nav-link">Admin</a>
+        <button id="mobileMenuBtn" class="mobile-menu-btn"><i data-lucide="menu"></i></button>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+  <a class="mobile-nav-link" href="index.html">Home</a>
+  <a class="mobile-nav-link" href="registration.html">Registration</a>
+  <a class="mobile-nav-link" href="about.html">About</a>
+  <a class="mobile-nav-link" href="programs.html">Programs</a>
+  <a class="mobile-nav-link" href="admissions.html">Admissions</a>
+  <a class="mobile-nav-link" href="contact.html">Contact</a>
+</div>
+
+<main class="programs" style="padding-top: 120px;">
+  <div class="container">
+    <h1 class="section-title">Programs & Extras</h1>
+    <div class="programs-content">
+      <div class="program-card">
+        <h2 class="program-title">Kindergarten</h2>
+        <p class="program-description">Play-based learning with strong early literacy and numeracy.</p>
+        <ul class="program-features">
+          <li class="program-feature"><i data-lucide="check-circle" class="feature-icon"></i><span>Daily story time and phonics</span></li>
+          <li class="program-feature"><i data-lucide="check-circle" class="feature-icon"></i><span>Hands-on math and science</span></li>
+          <li class="program-feature"><i data-lucide="check-circle" class="feature-icon"></i><span>Arts, music, and movement</span></li>
+        </ul>
+      </div>
+
+      <div class="program-card">
+        <h2 class="program-title">Primary (Standards 1–4)</h2>
+        <p class="program-description">Balanced curriculum that builds strong core skills and creativity.</p>
+        <div class="curriculum-table">
+          <table aria-label="Primary curriculum">
+            <thead><tr><th>Standard</th><th>Subjects</th></tr></thead>
+            <tbody>
+            <tr><td>Std 1</td><td>English, Chichewa, Math, Agriculture, Science, Social & Environmental Studies, Expressive Arts</td></tr>
+            <tr><td>Std 2</td><td>English, Chichewa, Math, Science, Agriculture, Social & Environmental Studies, Expressive Arts</td></tr>
+            <tr><td>Std 3</td><td>English, Math, Science, Social Studies, Agriculture, Expressive Arts</td></tr>
+            <tr><td>Std 4</td><td>English, Math, Science, Social Studies, Agriculture</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="program-card">
+        <h2 class="program-title">Uniforms</h2>
+        <p class="program-description">
+          Uniforms help build community and pride. Sizes are available for all learners. Orders and payments are handled at the school office.
+        </p>
+        <ul class="program-features">
+          <li class="program-feature"><i data-lucide="shirt" class="feature-icon"></i><span>Shirts, trousers/skirts, sweaters</span></li>
+          <li class="program-feature"><i data-lucide="wallet" class="feature-icon"></i><span>Payments are done at the office</span></li>
+        </ul>
+      </div>
+
+      <div class="program-card">
+        <h2 class="program-title">Transportation</h2>
+        <p class="program-description">
+          Safe and reliable transport for learners. Transport fees depend on distance and area.
+        </p>
+        <ul class="program-features">
+          <li class="program-feature"><i data-lucide="bus" class="feature-icon"></i><span>Pick-up and drop-off points</span></li>
+          <li class="program-feature"><i data-lucide="map" class="feature-icon"></i><span>Fees vary by distance</span></li>
+          <li class="program-feature"><i data-lucide="wallet" class="feature-icon"></i><span>Payments are done at the office</span></li>
+        </ul>
+      </div>
+
+      <div class="program-card">
+        <h2 class="program-title">Trips & Excursions</h2>
+        <p class="program-description">
+          Educational trips that make learning come alive. Costs depend on the destination and activities.
+        </p>
+        <ul class="program-features">
+          <li class="program-feature"><i data-lucide="plane" class="feature-icon"></i><span>Local museums, farms, nature parks</span></li>
+          <li class="program-feature"><i data-lucide="calendar-clock" class="feature-icon"></i><span>Advanced notice and consent required</span></li>
+          <li class="program-feature"><i data-lucide="wallet" class="feature-icon"></i><span>Payments are done at the office</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:2rem;">
+      <a href="registration.html" class="btn btn-primary">Register Your Child</a>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom"><p>&copy; 2025 Kidsco Academy.</p></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

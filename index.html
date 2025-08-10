@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kidsco Academy - Nurturing Bright Minds</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+   Header 
+  <header class="header" role="banner" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="logo" aria-label="Kidsco Academy home">
+          <i data-lucide="graduation-cap" class="logo-icon" aria-hidden="true"></i>
+          <span class="logo-text sr-only">Kidsco Academy</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="registration.html" class="nav-link">Registration</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="programs.html" class="nav-link">Programs</a>
+          <a href="admissions.html" class="nav-link">Admissions</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="flex-right">
+          <a href="admin.html" class="nav-link">Admin</a>
+          <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+   Mobile Menu 
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="index.html" class="mobile-nav-link">Home</a>
+    <a href="registration.html" class="mobile-nav-link">Registration</a>
+    <a href="about.html" class="mobile-nav-link">About</a>
+    <a href="programs.html" class="mobile-nav-link">Programs</a>
+    <a href="admissions.html" class="mobile-nav-link">Admissions</a>
+    <a href="contact.html" class="mobile-nav-link">Contact</a>
+  </div>
+
+   Hero Section 
+  <main>
+    <section id="home" class="hero" aria-label="Hero section">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">Nurturing Bright Minds</h1>
+            <p class="hero-description">
+              Where curiosity leads to discovery and every child thrives through play-based learning and strong academic foundations.
+            </p>
+            <div class="hero-buttons">
+              <button class="btn btn-primary" data-go="programs.html">Explore Programs</button>
+              <button class="btn btn-secondary" data-go="admissions.html">Apply Now</button>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="her0.jpg" alt="Smiling children learning together at Kidsco Academy" style="max-width:100%; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,.1)"/>
+            <div class="hero-placeholder" aria-hidden="true">
+              <i data-lucide="book-open" class="hero-icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     Quick Links 
+    <section class="quick-links" aria-label="Quick links">
+      <div class="container">
+        <div class="cards-grid">
+          <div class="card">
+            <div class="card-icon blue"><i data-lucide="users" aria-hidden="true"></i></div>
+            <h3 class="card-title">Kindergarten</h3>
+            <p class="card-description">Play-based learning for joyful foundations.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon green"><i data-lucide="book-open" aria-hidden="true"></i></div>
+            <h3 class="card-title">Primary (Std. 1–4)</h3>
+            <p class="card-description">Strong literacy, numeracy, creativity.</p>
+          </div>
+          <div class="card" role="link" tabindex="0" onclick="window.location.href='admissions.html'" onkeypress="if(event.key==='Enter'){window.location.href='admissions.html'}">
+            <div class="card-icon purple"><i data-lucide="calendar" aria-hidden="true"></i></div>
+            <h3 class="card-title">Admissions</h3>
+            <p class="card-description">Process, timelines, and requirements.</p>
+          </div>
+          <div class="card" role="link" tabindex="0" onclick="window.location.href='contact.html'" onkeypress="if(event.key==='Enter'){window.location.href='contact.html'}">
+            <div class="card-icon orange"><i data-lucide="phone" aria-hidden="true"></i></div>
+            <h3 class="card-title">Contact Us</h3>
+            <p class="card-description">We're here to help and answer questions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     Testimonials 
+    <section class="testimonials" aria-label="Testimonials">
+      <div class="container">
+        <h2 class="section-title">What Families Say</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <i data-lucide="star" class="star filled"></i>
+              <i data-lucide="star" class="star filled"></i>
+              <i data-lucide="star" class="star filled"></i>
+              <i data-lucide="star" class="star filled"></i>
+              <i data-lucide="star" class="star filled"></i>
+            </div>
+            <blockquote class="testimonial-quote">
+              "Our child looks forward to school every day. The teachers are caring and the program is excellent."
+            </blockquote>
+            <cite class="testimonial-author">— Parent of Grade 2 Student</cite>
+          </div>
+          <div class="testimonial">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <i data-lucide="star" class="star filled"></i>
+              <i data-lucide="star" class="star filled"></i>
+              <i data-lucide="star" class="star filled"></i>
+              <i data-lucide="star" class="star filled"></i>
+              <i data-lucide="star" class="star filled"></i>
+            </div>
+            <blockquote class="testimonial-quote">
+              "The play-based kindergarten made the transition to primary smooth and fun."
+            </blockquote>
+            <cite class="testimonial-author">— Kindergarten Parent</cite>
+          </div>
+          <div class="testimonial">
+            <div class="stars" aria-label="5 out of 5 stars">
+              <i data-lucide="star" class="star filled"></i>
+              <i data-lucide="star" class="star filled"></i>
+              <i data-lucide="star" class="star filled"></i>
+              <i data-lucide="star" class="star filled"></i>
+              <i data-lucide="star" class="star filled"></i>
+            </div>
+            <blockquote class="testimonial-quote">
+              "Strong focus on reading and math without losing the arts—perfect balance."
+            </blockquote>
+            <cite class="testimonial-author">— Parent of Grade 4 Student</cite>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     About Summary 
+    <section id="about" class="about" aria-label="About summary">
+      <div class="container">
+        <h2 class="section-title">About Us</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <h3 class="about-subtitle">Our History</h3>
+            <p class="about-description">
+              Kidsco Academy was founded to provide a warm, engaging environment where young learners build strong academic and social foundations. Over the years, we've grown our programs while keeping class sizes small and instruction personal.
+            </p>
+            <div class="features-list">
+              <div class="feature">
+                <i data-lucide="check-circle" class="feature-icon"></i>
+                <span>Small class sizes for personalized attention</span>
+              </div>
+              <div class="feature">
+                <i data-lucide="check-circle" class="feature-icon"></i>
+                <span>Experienced and caring teachers</span>
+              </div>
+              <div class="feature">
+                <i data-lucide="check-circle" class="feature-icon"></i>
+                <span>Play-based learning approach</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-mission">
+            <h3 class="about-subtitle">Mission</h3>
+            <p class="about-description">
+              We empower every child to become a confident, compassionate, and curious learner through developmentally appropriate teaching, family partnerships, and vibrant school culture.
+            </p>
+            <div class="values-box">
+              <h4 class="values-title">Our Values</h4>
+              <ul class="values-list">
+                <li>• Nurturing individual growth</li>
+                <li>• Building strong foundations</li>
+                <li>• Fostering creativity and curiosity</li>
+                <li>• Creating inclusive communities</li>
+              </ul>
+              <div style="margin-top: 1rem;">
+                <a href="about.html" class="btn btn-secondary">Read our full story</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     Programs Summary 
+    <section id="programs" class="programs" aria-label="Programs overview">
+      <div class="container">
+        <h2 class="section-title">Programs</h2>
+        <div class="programs-content">
+          <div class="program-card">
+            <h3 class="program-title">Kindergarten</h3>
+            <p class="program-description">
+              Our kindergarten is play-based and child-centered. Learners develop early literacy and numeracy through purposeful play, songs, stories, and guided exploration.
+            </p>
+            <ul class="program-features">
+              <li class="program-feature">
+                <i data-lucide="check-circle" class="feature-icon"></i>
+                <span>Language-rich classrooms and daily read-alouds</span>
+              </li>
+              <li class="program-feature">
+                <i data-lucide="check-circle" class="feature-icon"></i>
+                <span>Hands-on math and science discovery</span>
+              </li>
+              <li class="program-feature">
+                <i data-lucide="check-circle" class="feature-icon"></i>
+                <span>Art, music, and movement woven into routines</span>
+              </li>
+            </ul>
+          </div>
+          <div class="program-card">
+            <h3 class="program-title">Primary: Standards 1–4</h3>
+            <p class="program-description">A balanced curriculum that builds strong core skills and creativity.</p>
+            <div class="curriculum-table">
+              <table aria-label="Curriculum by standard">
+                <thead>
+                  <tr>
+                    <th>Standard</th>
+                    <th>Core Subjects</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Std 1</td>
+                    <td>English, Chichewa, Mathematics, Agriculture, Science, Social & Environmental Studies, Expressive Arts</td>
+                  </tr>
+                  <tr>
+                    <td>Std 2</td>
+                    <td>English, Chichewa, Mathematics, Science, Agriculture, Social & Environmental Studies, Expressive Arts</td>
+                  </tr>
+                  <tr>
+                    <td>Std 3</td>
+                    <td>English, Mathematics, Science, Social Studies, Agriculture, Expressive Arts</td>
+                  </tr>
+                  <tr>
+                    <td>Std 4</td>
+                    <td>English, Mathematics, Science, Social Studies, Agriculture</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div style="margin-top: 1rem;">
+              <a href="programs.html" class="btn btn-primary">See all programs & extras</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     Admissions Summary 
+    <section id="admissions" class="admissions" aria-label="Admissions summary">
+      <div class="container">
+        <h2 class="section-title">Admissions</h2>
+        <div class="admissions-content">
+          <div class="admission-process">
+            <h3 class="admission-subtitle">Application Process</h3>
+            <div class="process-steps">
+              <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                  <h4 class="step-title">Submit Inquiry</h4>
+                  <p class="step-description">Complete the registration form or call us</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                  <h4 class="step-title">School Tour</h4>
+                  <p class="step-description">Attend information session and campus visit</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                  <h4 class="step-title">Application</h4>
+                  <p class="step-description">Submit documents and application</p>
+                </div>
+              </div>
+              <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                  <h4 class="step-title">Enrollment</h4>
+                  <p class="step-description">Receive decision and enroll</p>
+                </div>
+              </div>
+            </div>
+            <div style="margin-top: 1rem;">
+              <a href="admissions.html" class="btn btn-secondary">Full admissions info</a>
+            </div>
+          </div>
+          <div class="admission-dates">
+            <h3 class="admission-subtitle">Important Dates</h3>
+            <div class="dates-box" aria-label="Important dates">
+              <div class="date-item">
+                <span class="date-label">Applications Open</span>
+                <span class="date-value">Jan 15</span>
+              </div>
+              <div class="date-item">
+                <span class="date-label">Info Session & Tour</span>
+                <span class="date-value">Mar 01</span>
+              </div>
+              <div class="date-item">
+                <span class="date-label">Application Deadline</span>
+                <span class="date-value">Apr 10</span>
+              </div>
+              <div class="date-item">
+                <span class="date-label">Decisions Released</span>
+                <span class="date-value">May 05</span>
+              </div>
+            </div>
+            <div class="requirements-note">
+              <p><strong>Required Documents:</strong> Birth certificate, previous school records (if applicable), and immunization records.</p>
+              <div style="margin-top: 1rem;">
+                <a href="registration.html" class="btn btn-primary">Register your child</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     Contact Summary 
+    <section id="contact" class="contact" aria-label="Contact section">
+      <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-content">
+          <div class="contact-form-wrapper">
+            <form class="contact-form" id="contactForm" aria-label="Contact form">
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" id="name" name="name" class="form-input" required />
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" name="email" class="form-input" required />
+              </div>
+              <div class="form-group">
+                <label for="phone" class="form-label">Phone</label>
+                <input type="tel" id="phone" name="phone" class="form-input" />
+              </div>
+              <div class="form-group">
+                <label for="interest" class="form-label">I'm interested in</label>
+                <select id="interest" name="interest" class="form-select">
+                  <option>Kindergarten</option>
+                  <option>Primary (Std. 1–4)</option>
+                  <option>Admissions</option>
+                  <option>Transportation</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" rows="4" class="form-textarea" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            </form>
+          </div>
+          <div class="contact-info">
+            <div class="info-card">
+              <h3 class="info-title">School Office</h3>
+              <div class="info-items">
+                <div class="info-item">
+                  <i data-lucide="phone" class="info-icon"></i>
+                  <span>+1 (000) 000-0000</span>
+                </div>
+                <div class="info-item">
+                  <i data-lucide="mail" class="info-icon"></i>
+                  <span>info@kidsco.example</span>
+                </div>
+                <div class="info-item">
+                  <i data-lucide="map-pin" class="info-icon"></i>
+                  <span>123 Learning Lane, Education City</span>
+                </div>
+              </div>
+            </div>
+            <div class="info-card">
+              <h3 class="info-title">Office Hours</h3>
+              <div class="hours-list">
+                <div class="hour-item"><span>Monday - Friday</span><span>8:00 AM - 4:00 PM</span></div>
+                <div class="hour-item"><span>Saturday</span><span>9:00 AM - 12:00 PM</span></div>
+                <div class="hour-item"><span>Sunday</span><span>Closed</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+   Footer 
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <i data-lucide="graduation-cap" class="footer-logo-icon"></i>
+            <span class="footer-logo-text">Kidsco Academy</span>
+          </div>
+          <p class="footer-description">
+            Inspiring lifelong learners through quality education and nurturing care.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">About</a></li>
+            <li><a href="programs.html" class="footer-link">Programs</a></li>
+            <li><a href="admissions.html" class="footer-link">Admissions</a></li>
+            <li><a href="contact.html" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Programs</h4>
+          <ul class="footer-links">
+            <li>Kindergarten</li>
+            <li>Primary Standard 1</li>
+            <li>Primary Standard 2</li>
+            <li>Primary Standard 3</li>
+            <li>Primary Standard 4</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Contact Info</h4>
+          <div class="footer-contact">
+            <p>123 Learning Lane</p>
+            <p>Education City</p>
+            <p>+1 (000) 000-0000</p>
+            <p>info@kidsco.example</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Kidsco Academy. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="js/hero-animations.js"></script>
+</body>
+</html>

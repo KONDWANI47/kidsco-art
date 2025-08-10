@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kidsco Academy - Registration</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+  <header class="header" role="banner">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="logo" aria-label="Kidsco Academy home">
+          <i data-lucide="graduation-cap" class="logo-icon"></i>
+        </a>
+        <nav class="nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="registration.html" class="nav-link">Registration</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="programs.html" class="nav-link">Programs</a>
+          <a href="admissions.html" class="nav-link">Admissions</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+        <div class="flex-right">
+          <a href="admin.html" class="nav-link">Admin</a>
+          <button id="mobileMenuBtn" class="mobile-menu-btn"><i data-lucide="menu"></i></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="mobile-nav-link">Home</a>
+    <a href="registration.html" class="mobile-nav-link">Registration</a>
+    <a href="about.html" class="mobile-nav-link">About</a>
+    <a href="programs.html" class="mobile-nav-link">Programs</a>
+    <a href="admissions.html" class="mobile-nav-link">Admissions</a>
+    <a href="contact.html" class="mobile-nav-link">Contact</a>
+  </div>
+
+  <main class="contact" style="padding-top: 120px;">
+    <div class="container">
+      <h1 class="section-title">Register Your Child</h1>
+      <div class="contact-content">
+        <div class="contact-form-wrapper" style="width:100%">
+          <form id="registrationForm" class="contact-form" aria-label="Registration form">
+            <h2 class="info-title">Parent/Guardian Information</h2>
+            <div class="form-group">
+              <label class="form-label" for="parentName">Full Name</label>
+              <input class="form-input" id="parentName" name="parentName" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="parentEmail">Email</label>
+              <input type="email" class="form-input" id="parentEmail" name="parentEmail" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="parentPhone">Phone</label>
+              <input type="tel" class="form-input" id="parentPhone" name="parentPhone" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="address">Home Address</label>
+              <input class="form-input" id="address" name="address" required />
+            </div>
+
+            <h2 class="info-title">Child Information</h2>
+            <div class="form-group">
+              <label class="form-label" for="childName">Child's Full Name</label>
+              <input class="form-input" id="childName" name="childName" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="childDOB">Date of Birth</label>
+              <input type="date" class="form-input" id="childDOB" name="childDOB" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="childGender">Gender</label>
+              <select class="form-select" id="childGender" name="childGender" required>
+                <option value="">Select...</option>
+                <option>Female</option>
+                <option>Male</option>
+                <option>Prefer not to say</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="grade">Applying for Grade</label>
+              <select class="form-select" id="grade" name="grade" required>
+                <option value="">Select...</option>
+                <option>Kindergarten</option>
+                <option>Standard 1</option>
+                <option>Standard 2</option>
+                <option>Standard 3</option>
+                <option>Standard 4</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="medicalInfo">Medical Information (allergies, conditions)</label>
+              <textarea class="form-textarea" id="medicalInfo" name="medicalInfo" rows="3" placeholder="Optional"></textarea>
+            </div>
+
+            <h2 class="info-title">Transportation & Uniform</h2>
+            <div class="form-group">
+              <label class="form-label" for="transportNeeded">Transportation Needed?</label>
+              <select id="transportNeeded" name="transportNeeded" class="form-select" required>
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+              </select>
+            </div>
+            <div id="transportDetails" style="display:none">
+              <div class="form-group">
+                <label class="form-label" for="transportArea">Area / Distance</label>
+                <input class="form-input" id="transportArea" name="transportArea" placeholder="e.g., 5km, Area 12, etc." />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="pickupPoint">Pickup Point</label>
+                <input class="form-input" id="pickupPoint" name="pickupPoint" placeholder="Nearest landmark/stop" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="uniformSize">Uniform Size</label>
+              <input class="form-input" id="uniformSize" name="uniformSize" placeholder="e.g., Shirt 6, Trouser 5" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="notes">Additional Notes</label>
+              <textarea id="notes" name="notes" class="form-textarea" rows="3" placeholder="Anything else we should know?"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">
+                <input type="checkbox" id="consent" required />
+                I confirm that the information provided is accurate.
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit Registration</button>
+            <p style="margin-top:.75rem; color:#4a5568;">
+              After submitting, you'll be redirected to WhatsApp to confirm your submission with our office.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2025 Kidsco Academy. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="js/registration.js"></script>
+</body>
+</html>
